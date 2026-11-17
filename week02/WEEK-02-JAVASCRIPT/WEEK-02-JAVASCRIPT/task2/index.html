@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 | Menu Bill Splitter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <a class="back-link" href="../index.html">← Week 2 tasks</a>
+        <header>
+            <p class="eyebrow">JAVASCRIPT INTRODUCTION · TASK 2</p>
+            <h1>Menu Bill Splitter</h1>
+            <p>Add each menu item and its price. The total is calculated from your list.</p>
+        </header>
+
+        <section class="panel">
+            <form id="itemForm" class="item-form" novalidate>
+                <div>
+                    <label for="itemName">Menu item</label>
+                    <input id="itemName" type="text" placeholder="e.g. Chicken rice">
+                </div>
+                <div>
+                    <label for="itemPrice">Price (Rs.)</label>
+                    <input id="itemPrice" type="number" min="0.01" step="0.01" placeholder="e.g. 850">
+                </div>
+                <button type="submit">Add item</button>
+            </form>
+            <div id="errors" class="errors" role="alert" aria-live="polite"></div>
+
+            <h2>Your items</h2>
+            <ul id="itemList" class="item-list">
+                <li class="empty">No menu items added yet.</li>
+            </ul>
+
+            <div class="split-controls">
+                <label for="people">Number of people</label>
+                <input id="people" type="number" min="1" step="1" value="2">
+                <button id="calculateButton" type="button">Calculate bill</button>
+            </div>
+
+            <section id="result" class="result" aria-live="polite" hidden>
+                <div class="result-row"><span>Bill total</span><strong id="billTotal">—</strong></div>
+                <div class="result-row per-person"><span>Each person pays</span><strong id="perPerson">—</strong></div>
+            </section>
+        </section>
+        <footer>MRX Learning · Week 02</footer>
+    </main>
+</body>
+</html>

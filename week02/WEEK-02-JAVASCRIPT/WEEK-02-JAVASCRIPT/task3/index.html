@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 | ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <a class="back-link" href="../index.html">← Week 2 tasks</a>
+        <header>
+            <p class="eyebrow">JAVASCRIPT INTRODUCTION · TASK 3</p>
+            <h1>My ToDo List</h1>
+            <p>Add tasks, tick them when they are complete, and remove tasks you no longer need.</p>
+        </header>
+
+        <section class="panel">
+            <form id="todoForm">
+                <label for="taskInput">New task</label>
+                <div class="add-row">
+                    <input id="taskInput" type="text" placeholder="What do you need to do?" autocomplete="off">
+                    <button type="submit">Add task</button>
+                </div>
+            </form>
+            <p id="message" class="message" role="alert" aria-live="polite"></p>
+            <div class="list-heading">
+                <h2>Your tasks</h2>
+                <span id="taskCount">0 tasks</span>
+            </div>
+            <ul id="todoList" class="todo-list">
+                <li class="empty">Your list is empty. Add your first task above.</li>
+            </ul>
+            <p class="note">Note: Tasks are kept only while this page is open. Refreshing the page clears the list.</p>
+        </section>
+        <footer>MRX Learning · Week 02</footer>
+    </main>
+</body>
+</html>

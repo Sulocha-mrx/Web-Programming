@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 | Bill Splitter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <a class="back-link" href="../index.html">← Week 2 tasks</a>
+        <header>
+            <p class="eyebrow">JAVASCRIPT INTRODUCTION · TASK 1</p>
+            <h1>Bill Splitter</h1>
+            <p>Enter your bill details to work out how much each person should pay.</p>
+        </header>
+
+        <section class="panel">
+            <form id="billForm" novalidate>
+                <label for="billAmount">Total bill amount (Rs.)</label>
+                <input id="billAmount" type="number" min="0.01" step="0.01" placeholder="e.g. 4500.00">
+
+                <label for="tipRate">Tip rate</label>
+                <select id="tipRate">
+                    <option value="0">0%</option>
+                    <option value="5">5%</option>
+                    <option value="10" selected>10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                </select>
+
+                <label for="people">Number of people</label>
+                <input id="people" type="number" min="1" step="1" placeholder="e.g. 3">
+
+                <div id="errors" class="errors" role="alert" aria-live="polite"></div>
+                <button type="submit">Calculate split</button>
+            </form>
+
+            <section id="result" class="result" aria-live="polite" hidden>
+                <h2>Bill summary</h2>
+                <div class="result-row"><span>Original bill</span><strong id="originalBill">—</strong></div>
+                <div class="result-row"><span>Tip amount</span><strong id="tipAmount">—</strong></div>
+                <div class="result-row"><span>Total with tip</span><strong id="totalBill">—</strong></div>
+                <div class="result-row per-person"><span>Each person pays</span><strong id="perPerson">—</strong></div>
+            </section>
+        </section>
+        <footer>MRX Learning · Week 02</footer>
+    </main>
+</body>
+</html>
