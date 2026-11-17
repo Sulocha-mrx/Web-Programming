@@ -1,0 +1,7 @@
+first_name,last_name,position,is_specialist
+John,Smith,Prop,True
+John,Smith,Hooker,True
+David,Brown,Scrum-half,False
+Michael,Perera,Fly-half,False
+James,Silva,Fullback,False
+David,Brown,Fly-half,False
